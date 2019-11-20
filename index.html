@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+
+</head>
+<body>
+	<div>
+		<ul>
+			<li><label for="num">Cuantos div quieres?</label><input id="num" type="text" ></li>
+			<li><input id="CargaDa" type="button" value="crear" onclick="cargar()"></li>
+		</ul>		
+
+		<script type="text/javascript">
+
+			// funcion para que cuando damos enter en le input, de click al boton cargar.
+			var entrada = document.getElementById("num");
+
+			entrada.addEventListener("keyup", function(event)
+			 {
+			 	if (event.keyCode === 13)
+			 	{
+			 		event.preventDefault();
+			 		document.getElementById("CargaDa").click();
+			  	}
+			});
+		
+		</script>
+	</div>	
+</body>
+</html>

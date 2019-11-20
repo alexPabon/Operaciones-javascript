@@ -1,0 +1,76 @@
+body
+{
+	padding: 0;
+	margin: 0;
+
+}
+
+div
+{
+	width: 50%;
+	border:solid 1px gray;
+	background-color: orange;
+	margin:100px auto;
+	padding: 20px;
+	text-align: left;
+	border-radius: 15px;
+}
+
+#marco
+{
+	border:solid 1px black;
+	background-color: white;
+	height: auto;
+}
+
+input[type="button"]
+{
+	background-color: #C3BFBF;
+	border:solid 1.5px gray;
+	font-size: 1vw;
+	margin: 7px 0;
+	padding: .2vw 1vw;
+	border-radius: 10px;
+	
+}
+
+input:focus
+{	
+	border: solid 2px blue;
+	outline: none;
+	border-radius: 5px;
+	font-size:1.1vw;
+	padding: .3vw 1vw;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+@media all and (max-width: 450px)
+{
+	input[type="button"]
+	{
+		font-size: 3vw;
+		margin: 5px .6px;
+		padding: 5px 6px;
+	}
+
+	input:focus
+	{
+	
+		border: solid 2px blue;
+		outline: none;
+		border-radius: 5px;
+		font-size:3vw;
+		padding: .3vw 1vw;
+	}
+
+	div
+	{
+		width: 80%;
+	}
+}
